@@ -1,5 +1,15 @@
 # IP
-http://localhost:8890/notebooks/Thashreefah/program1.ipynb
+http://localhost:8890/notebooks/Thashreefah/program1.ipynb<br>
+
+import cv2<br>
+path='BUTTERFLY3.jpg'<br>
+i=cv2.imread(path,1)<br>
+cv2.imshow('image',i)<br>
+cv2.waitKey(0)<br>
+cv2.destroyAllWindows()<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940475/173816997-24596b5d-4e42-46bb-855d-6d5be00da6ca.png)<br>
 
 
 import cv2<br>
