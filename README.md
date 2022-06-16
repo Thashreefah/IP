@@ -95,4 +95,38 @@ img.show()<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940475/173813213-de5acae2-6ef6-4202-94fa-0da206139145.png)<br>
 
+import cv2<br>
+img=cv2.imread('FLOWER2.jpg')<br>
+print('Original image length width',img.shape)<br>
+cv2.imshow('Original image',img)<br>
+cv2.waitKey(0)<br>
+imgresize=cv2.resize(img,(150,160))<br>
+cv2.imshow('Resized image',imgresize)<br>
+print('Resized image length width',imgresize.shape)<br>
+cv2.waitKey(0)<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940475/174043738-b1cffb6b-41c9-4ce5-bcbf-d8413411edd2.png)<br>
+![image](https://user-images.githubusercontent.com/97940475/174043822-d56fdf6b-7f5a-4584-abdb-144f70eb612e.png)<br>
+Original image length width (668, 800, 3)<br>
+Resized image length width (160, 150, 3)<br>
+
+import cv2<br>
+img=cv2.imread('FLOWER3.jpeg')<br>
+cv2.imshow("RGB",img)<br>
+cv2.waitKey(0)<br>
+img=cv2.imread('FLOWER3.jpeg',0)<br>
+cv2.imshow("Gray",img)<br>
+cv2.waitKey(0)<br>
+ret,bw_img=cv2.threshold(img,127,255,cv2.THRESH_BINARY)<br>
+cv2.imshow("Binary",bw_img)<br>
+cv2.waitKey(0)<br>
+cv2.destroyAllWindows()<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940475/174045829-61b23ce6-9250-4668-b498-2b5a3b0d4f22.png)<br>
+![image](https://user-images.githubusercontent.com/97940475/174046096-495e1297-5069-4b38-9e69-75a50961ca82.png)<br>
+![image](https://user-images.githubusercontent.com/97940475/174046187-aed38085-5874-4bc5-9854-85b5c7195113.png)<br>
+
+
 
