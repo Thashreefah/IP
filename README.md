@@ -30,8 +30,8 @@ OUTPUT:<br>
 ![download](https://user-images.githubusercontent.com/97940475/173810784-5e5b6688-e5b2-4d5b-8f63-42c4a06d4c3f.png)<br>
 
 #Develop a program to perform linear transformation.<br>
-#1)Rotation
-#2)Scalling
+#1)Rotation<br>
+#2)Scalling<br>
 from PIL import Image<br>
 img=Image.open("LEAF1.jpg")<br>
 img=img.rotate(60)<br>
@@ -52,6 +52,14 @@ print(img2)<br>
 OUTPUT:<br>
 (255, 192, 203)<br>
 (0, 0, 255)<br>
+
+#Write a program to create image using colors spaces.<br>
+from PIL import Image<br>
+img=Image.new('RGB',(200,400),(255,255,0))<br>
+img.show()<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940475/173813213-de5acae2-6ef6-4202-94fa-0da206139145.png)<br>
 
 #Develop a program to visualize the image using various color.<br>
 import cv2<br>
@@ -93,14 +101,6 @@ Width: 770<br>
 Height: 662<br>
 
 
-#Write a program to create image using colors spaces.<br>
-from PIL import Image<br>
-img=Image.new('RGB',(200,400),(255,255,0))<br>
-img.show()<br>
-
-OUTPUT:<br>
-![image](https://user-images.githubusercontent.com/97940475/173813213-de5acae2-6ef6-4202-94fa-0da206139145.png)<br>
-
 #Convert the original image to gray scale and then to binary....<br>
 import cv2<br>
 img=cv2.imread('FLOWER2.jpg')<br>
@@ -133,7 +133,7 @@ cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 
 OUTPUT:<br>
-![image](https://user-images.githubusercontent.com/97940475/174045829-61b23ce6-9250-4668-b498-2b5a3b0d4f22.png)<br>
+![image](https://user-images.githubusercontent.com/97940475/174058087-2bd8b4e6-1cbc-4ef5-8f94-422d48cfdd77.png)<br>
 ![image](https://user-images.githubusercontent.com/97940475/174046096-495e1297-5069-4b38-9e69-75a50961ca82.png)<br>
 ![image](https://user-images.githubusercontent.com/97940475/174046187-aed38085-5874-4bc5-9854-85b5c7195113.png)<br>
 
