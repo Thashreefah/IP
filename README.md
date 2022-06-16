@@ -1,7 +1,7 @@
 # IP
 http://localhost:8890/notebooks/Thashreefah/program1.ipynb<br>
 
-
+#Python program to explain cv2.imshow() method
 import cv2<br>
 path='BUTTERFLY3.jpg'<br>
 i=cv2.imread(path,1)<br>
@@ -12,7 +12,7 @@ cv2.destroyAllWindows()<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940475/173816997-24596b5d-4e42-46bb-855d-6d5be00da6ca.png)<br>
 
-
+#Develop a program to display grey scale image using read and write operations.
 img=cv2.imread('BUTTERFLY1.jpg',0)<br>
 cv2.imshow('image',img)<br>
 cv2.waitKey(0)<br>
@@ -21,7 +21,7 @@ cv2.destroyAllWindows()<br>
 OUPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940475/173811858-b3894fbb-9298-4d18-8e4b-6b3e23ca7ec8.png)<br>
 
-
+#Develop a program to display the image using matplotlib.
 import matplotlib.image as mping<br>
 import matplotlib.pyplot as plt<br>
 img=mping.imread('FLOWER1.jpg')<br>
@@ -30,7 +30,9 @@ plt.imshow(img)<br>
 OUTPUT:<br>
 ![download](https://user-images.githubusercontent.com/97940475/173810784-5e5b6688-e5b2-4d5b-8f63-42c4a06d4c3f.png)<br>
 
-
+#Develop a program to perform linear transformation.
+#1)Rotation
+#2)Scalling
 from PIL import Image<br>
 img=Image.open("LEAF1.jpg")<br>
 img=img.rotate(60)<br>
@@ -41,7 +43,7 @@ cv2.destroyAllWindows()<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940475/173812270-14803676-cc20-45ca-bf79-59e5875ce08e.png)<br>
 
-
+#Develop a program to convert color string to RGB color values.
 from PIL import ImageColor<br>
 img1=ImageColor.getrgb("pink")<br>
 print(img1)<br>
@@ -52,7 +54,7 @@ OUTPUT:<br>
 (255, 192, 203)<br>
 (0, 0, 255)<br>
 
-
+#Develop a program to visualize the image using various color.
 import cv2<br>
 import matplotlib.pyplot as plt<br>
 import numpy as np<br>
@@ -71,6 +73,8 @@ OUTPUT:<br>
 ![download](https://user-images.githubusercontent.com/97940475/173812723-c5b43eb9-e2af-4f52-809c-855512fdd217.png)<br>
 ![download](https://user-images.githubusercontent.com/97940475/173812756-1df9fc22-364c-4e6d-a6da-ba9cf24af554.png)<br>
 
+
+#Write a program to display the image attributes.
 from PIL import Image<br>
 image=Image.open('BUTTERFLY3.jpg')<br>
 print("Filename:",image.filename)<br>
@@ -89,6 +93,8 @@ size: (770, 662)<br>
 Width: 770<br>
 Height: 662<br>
 
+
+#Write a program to create image using colors spaces.
 from PIL import Image<br>
 img=Image.new('RGB',(200,400),(255,255,0))<br>
 img.show()<br>
@@ -96,6 +102,7 @@ img.show()<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940475/173813213-de5acae2-6ef6-4202-94fa-0da206139145.png)<br>
 
+#Convert the original image to gray scale and then to binary....
 import cv2<br>
 img=cv2.imread('FLOWER2.jpg')<br>
 print('Original image length width',img.shape)<br>
@@ -112,6 +119,8 @@ OUTPUT:<br>
 Original image length width (668, 800, 3)<br>
 Resized image length width (160, 150, 3)<br>
 
+
+#Resize the original image
 import cv2<br>
 img=cv2.imread('FLOWER3.jpeg')<br>
 cv2.imshow("RGB",img)<br>
