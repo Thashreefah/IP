@@ -100,8 +100,7 @@ size: (770, 662)<br>
 Width: 770<br>
 Height: 662<br>
 
-
-#Convert the original image to gray scale and then to binary....<br>
+#Resize the original image<br>
 import cv2<br>
 img=cv2.imread('FLOWER2.jpg')<br>
 print('Original image length width',img.shape)<br>
@@ -118,8 +117,7 @@ OUTPUT:<br>
 Original image length width (668, 800, 3)<br>
 Resized image length width (160, 150, 3)<br>
 
-
-#Resize the original image<br>
+#Convert the original image to gray scale and then to binary....<br>
 import cv2<br>
 img=cv2.imread('FLOWER3.jpeg')<br>
 cv2.imshow("RGB",img)<br>
