@@ -1,6 +1,6 @@
 # IP
 
-#Python program to explain cv2.imshow() method.<br>
+1)Python program to explain cv2.imshow() method.<br>
 import cv2<br>
 path='BUTTERFLY3.jpg'<br>
 i=cv2.imread(path,1)<br>
@@ -11,7 +11,7 @@ cv2.destroyAllWindows()<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940475/173816997-24596b5d-4e42-46bb-855d-6d5be00da6ca.png)<br>
 
-#Develop a program to display grey scale image using read and write operations.<br>
+2)Develop a program to display grey scale image using read and write operations.<br>
 img=cv2.imread('BUTTERFLY1.jpg',0)<br>
 cv2.imshow('image',img)<br>
 cv2.waitKey(0)<br>
@@ -20,7 +20,7 @@ cv2.destroyAllWindows()<br>
 OUPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940475/173811858-b3894fbb-9298-4d18-8e4b-6b3e23ca7ec8.png)<br>
 
-#Develop a program to display the image using matplotlib.<br>
+3)Develop a program to display the image using matplotlib.<br>
 import matplotlib.image as mping<br>
 import matplotlib.pyplot as plt<br>
 img=mping.imread('FLOWER1.jpg')<br>
@@ -29,9 +29,9 @@ plt.imshow(img)<br>
 OUTPUT:<br>
 ![download](https://user-images.githubusercontent.com/97940475/173810784-5e5b6688-e5b2-4d5b-8f63-42c4a06d4c3f.png)<br>
 
-#Develop a program to perform linear transformation.<br>
-#1)Rotation<br>
-#2)Scalling<br>
+4)Develop a program to perform linear transformation.<br>
+1-Rotation<br>
+2-Scalling<br>
 from PIL import Image<br>
 img=Image.open("LEAF1.jpg")<br>
 img=img.rotate(60)<br>
@@ -42,7 +42,7 @@ cv2.destroyAllWindows()<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940475/173812270-14803676-cc20-45ca-bf79-59e5875ce08e.png)<br>
 
-#Develop a program to convert color string to RGB color values.<br>
+5)Develop a program to convert color string to RGB color values.<br>
 from PIL import ImageColor<br>
 img1=ImageColor.getrgb("pink")<br>
 print(img1)<br>
@@ -53,7 +53,7 @@ OUTPUT:<br>
 (255, 192, 203)<br>
 (0, 0, 255)<br>
 
-#Write a program to create image using colors spaces.<br>
+6)Write a program to create image using colors spaces.<br>
 from PIL import Image<br>
 img=Image.new('RGB',(200,400),(255,255,0))<br>
 img.show()<br>
@@ -61,7 +61,7 @@ img.show()<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940475/173813213-de5acae2-6ef6-4202-94fa-0da206139145.png)<br>
 
-#Develop a program to visualize the image using various color.<br>
+7)Develop a program to visualize the image using various color.<br>
 import cv2<br>
 import matplotlib.pyplot as plt<br>
 import numpy as np<br>
@@ -81,7 +81,7 @@ OUTPUT:<br>
 ![download](https://user-images.githubusercontent.com/97940475/173812756-1df9fc22-364c-4e6d-a6da-ba9cf24af554.png)<br>
 
 
-#Write a program to display the image attributes.<br>
+8)Write a program to display the image attributes.<br>
 from PIL import Image<br>
 image=Image.open('BUTTERFLY3.jpg')<br>
 print("Filename:",image.filename)<br>
@@ -100,7 +100,7 @@ size: (770, 662)<br>
 Width: 770<br>
 Height: 662<br>
 
-#Resize the original image<br>
+9)Resize the original image<br>
 import cv2<br>
 img=cv2.imread('FLOWER2.jpg')<br>
 print('Original image length width',img.shape)<br>
@@ -117,7 +117,7 @@ OUTPUT:<br>
 Original image length width (668, 800, 3)<br>
 Resized image length width (160, 150, 3)<br>
 
-#Convert the original image to gray scale and then to binary....<br>
+10)Convert the original image to gray scale and then to binary....<br>
 import cv2<br>
 img=cv2.imread('FLOWER3.jpeg')<br>
 cv2.imshow("RGB",img)<br>
@@ -135,7 +135,7 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940475/174046096-495e1297-5069-4b38-9e69-75a50961ca82.png)<br>
 ![image](https://user-images.githubusercontent.com/97940475/174046187-aed38085-5874-4bc5-9854-85b5c7195113.png)<br>
 
-#Develop a program to readimage using URL.<br>
+11)Develop a program to readimage using URL.<br>
 from skimage import io<br>
 import matplotlib.pyplot as plt<br>
 url='https://cdn.theatlantic.com/thumbor/viW9N1IQLbCrJ0HMtPRvXPXShkU=/0x131:2555x1568/976x549/media/img/mt/2017/06/shutterstock_319985324/original.jpg'<br>
@@ -146,7 +146,7 @@ plt.show()<br>
 OUTPUT:<br>
 ![download](https://user-images.githubusercontent.com/97940475/175264633-b00283fc-ac7c-4374-a52b-eb8ef2da7f94.png)<br>
 
-#Write a program to mask and blur the image.<br>
+12)Write a program to mask and blur the image.<br>
 import cv2<br>
 import matplotlib.image as mping<br>
 import matplotlib.pyplot as plt<br>
@@ -188,7 +188,7 @@ plt.imshow(blur)<br>
 plt.show()<br>
 ![download](https://user-images.githubusercontent.com/97940475/175265449-7ee022b2-d1b9-4fbd-b77d-583c133ca31e.png)<br>
 
-#Write a program to mask and blur the image.<br>
+13)Write a program to mask and blur the image.<br>
 import cv2<br>
 import matplotlib.image as mping<br>
 import matplotlib.pyplot as plt<br>
@@ -211,7 +211,7 @@ plt.imshow(blur)<br>
 plt.show()<br>
 ![download](https://user-images.githubusercontent.com/97940475/175265927-7ca7c9df-e4aa-4551-9e38-d0f02b402d67.png)<br>
 
-#Write a program to perform arithmatic operations on images<br>
+14)Write a program to perform arithmatic operations on images<br>
 import cv2<br>
 import matplotlib.image as mping<br>
 import matplotlib.pyplot as plt<br>
@@ -252,7 +252,7 @@ OUTPUT:<br>
 ![download](https://user-images.githubusercontent.com/97940475/175266441-6fc61c5e-4eb5-4540-909d-d8f05efe33c5.png)<br>
 ![download](https://user-images.githubusercontent.com/97940475/175266508-9e240717-910e-439b-9719-beb6a97b96b9.png)<br>
 
-#Develop the program to change the image to different color spaces.<br>
+15)Develop the program to change the image to different color spaces.<br>
 import cv2 <br>
 img=cv2.imread("PLANT5.jpg")<br>
 gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)<br>
@@ -275,7 +275,7 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940475/175267228-3c8c3fef-f28a-42e2-8b36-316f25c2dd32.png)<br>
 ![image](https://user-images.githubusercontent.com/97940475/175267310-752ec506-b426-4088-bbef-933e68b2e6be.png)<br>
 
-#Program to create an image using 2D array<br>
+16)Program to create an image using 2D array<br>
 import cv2 as  c<br>
 import numpy as np<br>
 from PIL import Image<br>
