@@ -290,6 +290,112 @@ c.waitKey(0)<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940475/175268623-22cefe1a-fb53-46e1-9e3d-fce04be704b5.png)<br>
 
+17)
+import cv2
+import matplotlib.pyplot as plt
+image1=cv2.imread('BUTTERFLY1.png',1)
+image2=cv2.imread('BUTTERFLY1.png')
+ax=plt.subplots(figsize=(15,10))
+bitwiseAnd=cv2.bitwise_and(image1,image2)
+bitwiseOr=cv2.bitwise_or(image1,image2)
+bitwiseXor=cv2.bitwise_xor(image1,image2)
+bitwiseNot_img1=cv2.bitwise_not(image1)
+bitwiseNot_img2=cv2.bitwise_not(image2)
+plt.subplot(151)
+plt.imshow(bitwiseAnd)
+plt.subplot(152)
+plt.imshow(bitwiseOr)
+plt.subplot(153)
+plt.imshow(bitwiseXor)
+plt.subplot(154)
+plt.imshow(bitwiseNot_img1)
+plt.subplot(155)
+plt.imshow(bitwiseNot_img2)
+cv2.waitKey(0)
+
+OUTPUT:<br>
+![download](https://user-images.githubusercontent.com/97940475/176416570-60218c0f-0cea-4c47-9e84-be20fa1b0146.png)<br>
+
+18)
+#importing libraries
+import cv2
+import numpy as np
+image=cv2.imread('BUTTERFLY1.png')
+cv2.imshow('Original Image',image)
+cv2.waitKey(0)
+
+#Gussian Blur
+Gaussian=cv2.GaussianBlur(image,(7,7),0)
+cv2.imshow('Gaussian Blurring',Gaussian)
+cv2.waitKey(0)
+
+#Median Blur
+median=cv2.medianBlur(image,5)
+cv2.imshow('Median Blurring',median)
+cv2.waitKey(0)
+
+#Bilateral Blur
+bilateral=cv2.bilateralFilter(image,9,75,75)
+cv2.imshow('Bilateral blurring',bilateral)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+OUTPUT:<br>
+
+
+19)
+from PIL import Image
+from PIL import ImageEnhance
+image=Image.open('BUTTERFLY2.jpg')
+image.show()
+enh_bri=ImageEnhance.Brightness(image)
+brightness=1.5
+image_brightened=enh_bri.enhance(brightness)
+image_brightened.show()
+enh_col=ImageEnhance.Color(image)
+color=1.5
+image_colored=enh_col.enhance(color)
+image_colored.show()
+enh_con=ImageEnhance.Contrast(image)
+contrast=1.5
+image_contrasted=enh_con.enhance(contrast)
+image_contrasted.show()
+enh_sha=ImageEnhance.Sharpness(image)
+sharpness=3.0
+image_sharped=enh_sha.enhance(sharpness)
+image_sharped.show()
+
+
+20)
+import cv2
+import numpy as np
+#from matplotlib import pyplt as plt
+import matplotlib.pyplot as plt
+from PIL import Image,ImageEnhance
+img=cv2.imread('FLOWER1.JPG',0)
+ax=plt.subplots(figsize=(20,10))
+kernel=np.ones((5,5),np.uint8)
+opening=cv2.morphologyEx(img,cv2.MORPH_OPEN,kernel)
+closing=cv2.morphologyEx(img,cv2.MORPH_CLOSE,kernel)
+erosion=cv2.erode(img,kernel,iterations=1)
+dilation=cv2.dilate(img,kernel,iterations=1)
+gradient=cv2.morphologyEx(img,cv2.MORPH_GRADIENT,kernel)
+plt.subplot(151)
+plt.imshow(opening)
+plt.subplot(152)
+plt.imshow(closing)
+plt.subplot(153)
+plt.imshow(erosion)
+plt.subplot(154)
+plt.imshow(dilation)
+plt.subplot(155)
+plt.imshow(gradient)
+cv2.waitKey(0)
+
+OUTPUT:<br>
+![download](https://user-images.githubusercontent.com/97940475/176422302-8961beeb-659a-4d07-a742-d790f30c0861.png)<br>
+
+
 
 
 
