@@ -416,43 +416,43 @@ OUTPUT:<br>
 
 
 22)
-import cv2
-import numpy as np
-from matplotlib import pyplot as plt
-image=cv2.imread('CAT1.jpg',0)
-x,y=image.shape
-z=np.zeros((x,y))
-for i in range(0,x):
-    for j in range(0,y):
-        if(image[i][j]>50 and image[i][j]<150):
-            z[i][j]=255
-        else:
-            z[i][j]=image[i][j]
-equ=np.hstack((image,z))
-plt.title('Graylevel slicing with background')
-plt.imshow(equ,'gray')
-plt.show()
+import cv2<br>
+import numpy as np<br>
+from matplotlib import pyplot as plt<br>
+image=cv2.imread('CAT1.jpg',0)<br>
+x,y=image.shape<br>
+z=np.zeros((x,y))<br>
+for i in range(0,x):<br>
+    for j in range(0,y):<br>
+        if(image[i][j]>50 and image[i][j]<150):<br>
+            z[i][j]=255<br>
+        else:<br>
+            z[i][j]=image[i][j]<br>
+equ=np.hstack((image,z))<br>
+plt.title('Graylevel slicing with background')<br>
+plt.imshow(equ,'gray')<br>
+plt.show()<br>
 
 OUTPUT:<br>
 ![download](https://user-images.githubusercontent.com/97940475/178706167-badef28f-b034-438e-a384-df738d518413.png)<br>
 
 23)
-import cv2
-import numpy as np
-from matplotlib import pyplot as plt
-image=cv2.imread('CAT1.jpg',0)
-x,y=image.shape
-z=np.zeros((x,y))
-for i in range(0,x):
-    for j in range(0,y):
-        if(image[i][j]>50 and image[i][j]<150):
-            z[i][j]=255
-        else:
-            z[i][j]=0
-equ=np.hstack((image,z))
-plt.title('Graylevel slicing without background')
-plt.imshow(equ,'gray')
-plt.show()
+import cv2<br>
+import numpy as np<br>
+from matplotlib import pyplot as plt<br>
+image=cv2.imread('CAT1.jpg',0)<br>
+x,y=image.shape<br>
+z=np.zeros((x,y))<br>
+for i in range(0,x):<br>
+    for j in range(0,y):<br>
+        if(image[i][j]>50 and image[i][j]<150):<br>
+            z[i][j]=255<br>
+        else:<br>
+            z[i][j]=0<br>
+equ=np.hstack((image,z))<br>
+plt.title('Graylevel slicing without background')<br>
+plt.imshow(equ,'gray')<br>
+plt.show()<br>
 
 OUTPUT:<br>
 ![download](https://user-images.githubusercontent.com/97940475/178706345-ec3389d2-4597-4452-a32f-16601e9bee4e.png)<br>
