@@ -12,13 +12,14 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940475/173816997-24596b5d-4e42-46bb-855d-6d5be00da6ca.png)<br>
 
 2)Develop a program to display grey scale image using read and write operations.<br>
+import cv2<br>
 img=cv2.imread('BUTTERFLY1.jpg',0)<br>
 cv2.imshow('image',img)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 
 OUPUT:<br>
-![image](https://user-images.githubusercontent.com/97940475/173811858-b3894fbb-9298-4d18-8e4b-6b3e23ca7ec8.png)<br>
+![image](https://user-images.githubusercontent.com/97940475/178718561-fb71e4fb-17e9-43e4-9a29-8ac8e21cdb35.png)<br>
 
 3)Develop a program to display the image using matplotlib.<br>
 import matplotlib.image as mping<br>
