@@ -395,7 +395,64 @@ cv2.waitKey(0)<br>
 OUTPUT:<br>
 ![download](https://user-images.githubusercontent.com/97940475/176422302-8961beeb-659a-4d07-a742-d790f30c0861.png)<br>
 
+21)Develop a program to<br>
+i)Read the image,convert it into grayscale image<br>
+ii)Write(save) the grayscale image and<br>
+iii)Display the original image and grayscale image<br>
+import cv2<br>
+OriginalImg=cv2.imread('FLOWER1.jpg')<br>
+GrayImg=cv2.imread('FLOWER1.jpg',0)<br>
+isSaved=cv2.imwrite('C:/thash/th.jpg',GrayImg)<br>
+cv2.imshow('Display Original Image',OriginalImg)<br>
+cv2.imshow('Display GrayScale Image',GrayImg)<br>
+cv2.waitKey(0)<br>
+cv2.destroyAllWindows()<br>
+if isSaved:<br>
+    print('The image is succesfully saved.')<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940475/178705772-e99bd765-a90e-42b9-92f7-e4c1032c376c.png)<br>
+![image](https://user-images.githubusercontent.com/97940475/178705931-dea0465c-b21c-4a34-8b2a-67b4d4bfded8.png)<br>
 
 
+22)
+import cv2
+import numpy as np
+from matplotlib import pyplot as plt
+image=cv2.imread('CAT1.jpg',0)
+x,y=image.shape
+z=np.zeros((x,y))
+for i in range(0,x):
+    for j in range(0,y):
+        if(image[i][j]>50 and image[i][j]<150):
+            z[i][j]=255
+        else:
+            z[i][j]=image[i][j]
+equ=np.hstack((image,z))
+plt.title('Graylevel slicing with background')
+plt.imshow(equ,'gray')
+plt.show()
 
+OUTPUT:<br>
+![download](https://user-images.githubusercontent.com/97940475/178706167-badef28f-b034-438e-a384-df738d518413.png)<br>
 
+23)
+import cv2
+import numpy as np
+from matplotlib import pyplot as plt
+image=cv2.imread('CAT1.jpg',0)
+x,y=image.shape
+z=np.zeros((x,y))
+for i in range(0,x):
+    for j in range(0,y):
+        if(image[i][j]>50 and image[i][j]<150):
+            z[i][j]=255
+        else:
+            z[i][j]=0
+equ=np.hstack((image,z))
+plt.title('Graylevel slicing without background')
+plt.imshow(equ,'gray')
+plt.show()
+
+OUTPUT:<br>
+![download](https://user-images.githubusercontent.com/97940475/178706345-ec3389d2-4597-4452-a32f-16601e9bee4e.png)<br>
