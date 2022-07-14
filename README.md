@@ -270,11 +270,11 @@ cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 
 OUTPUT:<br>
-![image](https://user-images.githubusercontent.com/97940475/178949251-6c19da34-415a-43bd-a24f-53c4571051be.png)
-![image](https://user-images.githubusercontent.com/97940475/178949325-b9d21f76-4656-428a-a6c0-46b85923cca7.png)
-![image](https://user-images.githubusercontent.com/97940475/178949395-bbc19379-624b-49e1-ba18-c9958e99b485.png)
-![image](https://user-images.githubusercontent.com/97940475/178949451-3d9dbede-ed10-4451-8e60-fa79e4524ebd.png)
-![image](https://user-images.githubusercontent.com/97940475/178949498-45d33b7e-84c1-4625-812f-11e0e66a332a.png)
+![image](https://user-images.githubusercontent.com/97940475/178949251-6c19da34-415a-43bd-a24f-53c4571051be.png)<br>
+![image](https://user-images.githubusercontent.com/97940475/178949325-b9d21f76-4656-428a-a6c0-46b85923cca7.png)<br>
+![image](https://user-images.githubusercontent.com/97940475/178949395-bbc19379-624b-49e1-ba18-c9958e99b485.png)<br>
+![image](https://user-images.githubusercontent.com/97940475/178949451-3d9dbede-ed10-4451-8e60-fa79e4524ebd.png)<br>
+![image](https://user-images.githubusercontent.com/97940475/178949498-45d33b7e-84c1-4625-812f-11e0e66a332a.png)<br>
 
 
 16)Program to create an image using 2D array<br>
@@ -343,6 +343,10 @@ cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 
 OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940475/178950941-e517f39b-db6f-468f-9d26-0fb3b8791946.png)<br>
+![image](https://user-images.githubusercontent.com/97940475/178950994-a00beb94-2392-4dae-b442-0d1b5572d252.png)<br>
+![image](https://user-images.githubusercontent.com/97940475/178951093-50dc27a8-56ad-42bd-b8c7-c76c1c0a1e43.png)<br>
+![image](https://user-images.githubusercontent.com/97940475/178951178-83a2a34d-dbf9-4db9-a6e0-3a47d111dc6e.png)<br>
 
 
 19)
