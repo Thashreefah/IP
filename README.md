@@ -132,9 +132,9 @@ cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 
 OUTPUT:<br>
-![image](https://user-images.githubusercontent.com/97940475/174058087-2bd8b4e6-1cbc-4ef5-8f94-422d48cfdd77.png)<br>
-![image](https://user-images.githubusercontent.com/97940475/174046096-495e1297-5069-4b38-9e69-75a50961ca82.png)<br>
-![image](https://user-images.githubusercontent.com/97940475/174046187-aed38085-5874-4bc5-9854-85b5c7195113.png)<br>
+![image](https://user-images.githubusercontent.com/97940475/178947800-c12cafe7-93e0-4f71-96b2-996687b32a50.png)<br>
+![image](https://user-images.githubusercontent.com/97940475/178947918-f91cce49-a8e6-4588-adbb-ff7adf419339.png)<br>
+![image](https://user-images.githubusercontent.com/97940475/178948004-9e07fd78-ffe9-4b64-bd8f-6ed2188bcf09.png)<br>
 
 11)Develop a program to readimage using URL.<br>
 from skimage import io<br>
