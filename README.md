@@ -424,8 +424,7 @@ if isSaved:<br>
     print('The image is succesfully saved.')<br>
 
 OUTPUT:<br>
-![image](https://user-images.githubusercontent.com/97940475/178705772-e99bd765-a90e-42b9-92f7-e4c1032c376c.png)<br>
-![image](https://user-images.githubusercontent.com/97940475/178705931-dea0465c-b21c-4a34-8b2a-67b4d4bfded8.png)<br>
+![image](https://user-images.githubusercontent.com/97940475/178954684-5d3fb0ec-f4b7-4e98-b665-e6e29fc1d527.png)<br>
 
 
 22)
