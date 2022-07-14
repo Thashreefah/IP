@@ -475,11 +475,11 @@ import skimage.color<br>
 import skimage.io<br>
 import matplotlib.pyplot as plt<br>
 
-# read the image of a plant seedling as grayscale from the outset<br>
+#read the image of a plant seedling as grayscale from the outset<br>
 image = skimage.io.imread(fname="DOG1.jpg",as_gray=True)<br>
 image1 = skimage.io.imread(fname="DOG1.jpg") <br>
 
-# display the image<br>
+#display the image<br>
 fig, ax = plt.subplots()<br>
 plt.imshow(image, cmap="gray")<br>
 plt.show()<br>
@@ -488,10 +488,10 @@ fig, ax = plt.subplots()<br>
 plt.imshow(image1,cmap="gray")<br>
 plt.show()<br>
 
-# create the histogram<br>
+#create the histogram<br>
 histogram, bin_edges = np.histogram(image, bins=256, range=(0, 1))<br>
 
-# configure and draw the histogram figure<br>
+#configure and draw the histogram figure<br>
 plt.figure()<br>
 plt.title("Grayscale Histogram")<br>
 plt.xlabel("grayscale value")<br>
