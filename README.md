@@ -263,18 +263,19 @@ hls=cv2.cvtColor(img,cv2.COLOR_BGR2HLS)<br>
 yuv=cv2.cvtColor(img,cv2.COLOR_BGR2YUV)<br>
 cv2.imshow("GRAY image",gray)<br>
 cv2.imshow("HSV image",hsv)<br>
-cv2.imshow("LAB image",lab)
+cv2.imshow("LAB image",lab)<br>
 cv2.imshow("HLS image",hls)<br>
 cv2.imshow("YUV image",yuv)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 
 OUTPUT:<br>
-![image](https://user-images.githubusercontent.com/97940475/175266819-0c7f15f6-d04e-4065-9baa-86e3a93d83e2.png)<br>
-![image](https://user-images.githubusercontent.com/97940475/175266936-c8cedc80-94c2-45f0-ac13-a9ba7f1b5c85.png)<br>
-![image](https://user-images.githubusercontent.com/97940475/175267057-08276b48-6976-4691-b99f-38e396e39478.png)<br>
-![image](https://user-images.githubusercontent.com/97940475/175267228-3c8c3fef-f28a-42e2-8b36-316f25c2dd32.png)<br>
-![image](https://user-images.githubusercontent.com/97940475/175267310-752ec506-b426-4088-bbef-933e68b2e6be.png)<br>
+![image](https://user-images.githubusercontent.com/97940475/178949251-6c19da34-415a-43bd-a24f-53c4571051be.png)
+![image](https://user-images.githubusercontent.com/97940475/178949325-b9d21f76-4656-428a-a6c0-46b85923cca7.png)
+![image](https://user-images.githubusercontent.com/97940475/178949395-bbc19379-624b-49e1-ba18-c9958e99b485.png)
+![image](https://user-images.githubusercontent.com/97940475/178949451-3d9dbede-ed10-4451-8e60-fa79e4524ebd.png)
+![image](https://user-images.githubusercontent.com/97940475/178949498-45d33b7e-84c1-4625-812f-11e0e66a332a.png)
+
 
 16)Program to create an image using 2D array<br>
 import cv2 as  c<br>
