@@ -356,7 +356,7 @@ image=Image.open('BUTTERFLY2.jpg')<br>
 image.show()<br>
 enh_bri=ImageEnhance.Brightness(image)<br>
 brightness=1.5<br>
-image_brightened=enh_bri.e<br>nhance(brightness)<br>
+image_brightened=enh_bri.enhance(brightness)<br>
 image_brightened.show()<br>
 enh_col=ImageEnhance.Color(image)<br>
 color=1.5<br>
@@ -370,6 +370,13 @@ enh_sha=ImageEnhance.Sharpness(image)<br>
 sharpness=3.0<br>
 image_sharped=enh_sha.enhance(sharpness)<br>
 image_sharped.show()<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940475/178953621-413ea939-662c-4194-8989-a445e1d83017.png)<br>
+![image](https://user-images.githubusercontent.com/97940475/178953687-0348755a-4ea3-4659-af15-8ab0293d9149.png)<br>
+![image](https://user-images.githubusercontent.com/97940475/178953758-88faed1f-0538-44d0-bd7e-b202b861bf95.png)<br>
+![image](https://user-images.githubusercontent.com/97940475/178953829-c87695c0-6354-46be-a5a1-040197e1095e.png)<br>
+![image](https://user-images.githubusercontent.com/97940475/178953891-3fe1cbaa-bb1c-4a0d-94ce-b53be2cadde0.png)<br>
 
 
 20)
