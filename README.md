@@ -587,6 +587,7 @@ plt.show()<br>
 
 ![download](https://user-images.githubusercontent.com/97940475/180177456-ba983cbe-fc62-40ab-8e59-c997dcbcf87f.png)<br>
 ![download](https://user-images.githubusercontent.com/97940475/180177480-b8edbc59-9004-4ab0-8578-6074747ab04a.png)<br>
+![image](https://user-images.githubusercontent.com/97940475/180179226-0595a272-f726-48f2-80be-409e41086e25.png)
 
 #Image flip<br>
 import matplotlib.pyplot as plt<br>
@@ -604,6 +605,7 @@ plt.show()<br>
 
 ![download](https://user-images.githubusercontent.com/97940475/180177565-6598cb13-7c0c-438a-997e-9659b4a7c028.png)<br>
 ![download](https://user-images.githubusercontent.com/97940475/180177585-39f46015-876f-4a8b-932e-47a26bf4bac5.png)<br>
+![image](https://user-images.githubusercontent.com/97940475/180179027-cda688c9-0795-4f1f-a47f-53a43b5795a3.png)
 
 #Image Crop<br>
 
