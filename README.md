@@ -510,12 +510,12 @@ OUTPUT:<br>
 a) Image negative<br>
 b) Log transformation<br>
 c) Gamma correction<br>
-%matplotlib inline<br>
+#%matplotlib inline<br>
 import imageio<br>
 import matplotlib.pyplot as plt<br>
-import warnings<br>
-import matplotlib.cbook<br>
-warnings.filterwarnings("ignore",category=matplotlib.cbook.mplDeprecation)<br>
+#import warnings<br>
+#import matplotlib.cbook<br>
+#warnings.filterwarnings("ignore",category=matplotlib.cbook.mplDeprecation)<br>
 pic=imageio.imread('PARROT1.jpg')<br>
 plt.figure(figsize=(6,6))<br>
 plt.imshow(pic);<br>
