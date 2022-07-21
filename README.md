@@ -505,3 +505,119 @@ OUTPUT:<br>
 ![download](https://user-images.githubusercontent.com/97940475/178964765-f7066d16-27c1-4018-9d63-44d7c76ae84c.png)<br>
 ![download](https://user-images.githubusercontent.com/97940475/178964775-8eb09887-2297-4f1b-8dc9-6a06672855a2.png)<br>
 ![download](https://user-images.githubusercontent.com/97940475/178964810-41c45a12-8c56-4bed-bb6c-73e898a4e5df.png)<br>
+
+25)
+%matplotlib inline
+import imageio
+import matplotlib.pyplot as plt
+import warnings
+import matplotlib.cbook
+warnings.filterwarnings("ignore",category=matplotlib.cbook.mplDeprecation)
+pic=imageio.imread('PARROT1.jpg')
+plt.figure(figsize=(6,6))
+plt.imshow(pic);
+plt.axis('off');
+
+![download](https://user-images.githubusercontent.com/97940475/180177056-370f4b50-ab9e-45e4-bcd2-8c28bc9a3b90.png)
+
+negative=255-pic #neg=(l-1)-img
+plt.figure(figsize=(6,6))
+plt.imshow(negative);
+plt.axis('off');
+
+![download](https://user-images.githubusercontent.com/97940475/180177135-248c58e8-ee68-4585-86dd-a928d1799409.png)
+
+%matplotlib inline
+
+import imageio
+import numpy as np
+import matplotlib.pyplot as plt
+
+pic=imageio.imread('PARROT1.jpg')
+gray=lambda rgb:np.dot(rgb[...,:3],[0.299,0.587,0.114])
+gray=gray(pic)
+
+max_=np.max(gray)
+
+def log_transform():
+    return(255/np.log(1+max_))*np.log(1+gray)
+plt.figure(figsize=(5,5))
+plt.imshow(log_transform(),cmap=plt.get_cmap(name='gray'))
+plt.axis('off');
+
+![download](https://user-images.githubusercontent.com/97940475/180177227-11d94183-69b6-4431-9c6d-19167e9bd1da.png)
+
+import imageio
+import matplotlib.pyplot as plt
+
+#Gamma encoding
+pic=imageio.imread('PARROT1.jpg')
+gamma=2.2 #Gamma<1~Dark;Gamma >~Bright
+
+gamma_correction=((pic/255)**(1/gamma))
+plt.figure(figsize=(5,5))
+plt.imshow(gamma_correction)
+plt.axis('off');
+
+![download](https://user-images.githubusercontent.com/97940475/180177303-672cb0d1-5b3f-4544-adbf-7121f2dbc72b.png)
+
+26)
+#Image sharpen
+from PIL import Image
+from PIL import ImageFilter
+import matplotlib.pyplot as plt
+
+#Load the image
+my_image=Image.open('FISH1.jpg')
+plt.imshow(my_image)
+plt.show()
+#Use sharpen function
+sharp=my_image.filter(ImageFilter.SHARPEN)
+#Save the image
+sharp.save('C:/thash/Image_sharpen.jpg')
+sharp.show()
+plt.imshow(sharp)
+plt.show()
+
+![download](https://user-images.githubusercontent.com/97940475/180177456-ba983cbe-fc62-40ab-8e59-c997dcbcf87f.png)
+![download](https://user-images.githubusercontent.com/97940475/180177480-b8edbc59-9004-4ab0-8578-6074747ab04a.png)
+
+#Image flip
+import matplotlib.pyplot as plt
+#load the image
+img=Image.open('FISH1.jpg')
+plt.imshow(img)
+plt.show()
+#use the flip function
+flip=img.transpose(Image.FLIP_LEFT_RIGHT)
+
+#save the image
+flip.save('C:/thash/Image_flip.jpg')
+plt.imshow(flip)
+plt.show()
+
+![download](https://user-images.githubusercontent.com/97940475/180177565-6598cb13-7c0c-438a-997e-9659b4a7c028.png)
+![download](https://user-images.githubusercontent.com/97940475/180177585-39f46015-876f-4a8b-932e-47a26bf4bac5.png)
+
+#Image Crop
+
+#Importing Image class from PIL module
+from PIL import Image
+import matplotlib.pyplot as plt
+#Opens a image in RGB mode
+im=Image.open('FISH1.jpg')
+
+#Size of the image in pixels(size of original image)
+#(This is not mandatory)
+width,height=im.size
+
+#Cropped image of above dimension
+#(It will not Change original image)
+im1=im.crop((50,200,3000,1600))
+
+#Shows the image in image viewer
+im1.show()
+plt.imshow(im1)
+plt.show()
+
+![download](https://user-images.githubusercontent.com/97940475/180177663-5e56e468-ee07-4b71-9bbf-5493e7d935fb.png)
