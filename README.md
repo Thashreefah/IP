@@ -292,7 +292,7 @@ c.waitKey(0)<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940475/175268623-22cefe1a-fb53-46e1-9e3d-fce04be704b5.png)<br>
 
-17)
+17)Bitwise operation
 import cv2<br>
 import matplotlib.pyplot as plt<br>
 image1=cv2.imread('BUTTERFLY1.png',1)<br>
@@ -318,7 +318,7 @@ cv2.waitKey(0)<br>
 OUTPUT:<br>
 ![download](https://user-images.githubusercontent.com/97940475/176416570-60218c0f-0cea-4c47-9e84-be20fa1b0146.png)<br>
 
-18)
+18)Blurring image
 #importing libraries<br>
 import cv2<br>
 import numpy as np<br>
@@ -349,7 +349,7 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940475/178951178-83a2a34d-dbf9-4db9-a6e0-3a47d111dc6e.png)<br>
 
 
-19)
+19)Image Enhancement
 from PIL import Image<br>
 from PIL import ImageEnhance<br>
 image=Image.open('BUTTERFLY2.jpg')<br>
@@ -379,7 +379,7 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940475/178953891-3fe1cbaa-bb1c-4a0d-94ce-b53be2cadde0.png)<br>
 
 
-20)
+20)Morpholigical operation
 import cv2<br>
 import numpy as np<br>
 #from matplotlib import pyplt as plt<br>
@@ -427,7 +427,7 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940475/178954684-5d3fb0ec-f4b7-4e98-b665-e6e29fc1d527.png)<br>
 
 
-22)
+22)Slicing with background
 import cv2<br>
 import numpy as np<br>
 from matplotlib import pyplot as plt<br>
@@ -448,7 +448,7 @@ plt.show()<br>
 OUTPUT:<br>
 ![download](https://user-images.githubusercontent.com/97940475/178706167-badef28f-b034-438e-a384-df738d518413.png)<br>
 
-23)
+23)Slicing without background
 import cv2<br>
 import numpy as np<br>
 from matplotlib import pyplot as plt<br>
