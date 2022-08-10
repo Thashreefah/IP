@@ -408,10 +408,10 @@ cv2.waitKey(0)<br>
 **OUTPUT:<br>**
 ![download](https://user-images.githubusercontent.com/97940475/176422302-8961beeb-659a-4d07-a742-d790f30c0861.png)<br>
 
-**20)Develop a program to<br>**
+**20)Develop a program to<br>
 i)Read the image,convert it into grayscale image<br>
 ii)Write(save) the grayscale image and<br>
-iii)Display the original image and grayscale image<br>
+iii)Display the original image and grayscale image<br>**
 import cv2<br>
 OriginalImg=cv2.imread('FLOWER1.jpg')<br>
 GrayImg=cv2.imread('FLOWER1.jpg',0)<br>
