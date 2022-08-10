@@ -1,6 +1,6 @@
 # IP
 
-1)Python program to explain cv2.imshow() method.<br>
+**1)Python program to explain cv2.imshow() method.<br>**
 import cv2<br>
 path='BUTTERFLY3.jpg'<br>
 i=cv2.imread(path,1)<br>
@@ -8,29 +8,29 @@ cv2.imshow('image',i)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 
-OUTPUT:<br>
+**OUTPUT:<br>**
 ![image](https://user-images.githubusercontent.com/97940475/173816997-24596b5d-4e42-46bb-855d-6d5be00da6ca.png)<br>
 
-2)Develop a program to display grey scale image using read and write operations.<br>
+**2)Develop a program to display grey scale image using read and write operations.<br>**
 import cv2<br>
 img=cv2.imread('BUTTERFLY1.jpg',0)<br>
 cv2.imshow('image',img)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 
-OUPUT:<br>
+**OUPUT:<br>**
 ![image](https://user-images.githubusercontent.com/97940475/178718561-fb71e4fb-17e9-43e4-9a29-8ac8e21cdb35.png)<br>
 
-3)Develop a program to display the image using matplotlib.<br>
+**3)Develop a program to display the image using matplotlib.<br>**
 import matplotlib.image as mping<br>
 import matplotlib.pyplot as plt<br>
 img=mping.imread('FLOWER1.jpg')<br>
 plt.imshow(img)<br>
 
-OUTPUT:<br>
+**OUTPUT:<br>**
 ![download](https://user-images.githubusercontent.com/97940475/173810784-5e5b6688-e5b2-4d5b-8f63-42c4a06d4c3f.png)<br>
 
-4)Develop a program to perform linear transformation.<br>
+**4)Develop a program to perform linear transformation.<br>**
 1-Rotation<br>
 2-Scalling<br>
 from PIL import Image<br>
@@ -40,29 +40,29 @@ img.show()<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 
-OUTPUT:<br>
+**OUTPUT:<br>**
 ![image](https://user-images.githubusercontent.com/97940475/173812270-14803676-cc20-45ca-bf79-59e5875ce08e.png)<br>
 
-5)Develop a program to convert color string to RGB color values.<br>
+**5)Develop a program to convert color string to RGB color values.<br>**
 from PIL import ImageColor<br>
 img1=ImageColor.getrgb("pink")<br>
 print(img1)<br>
 img2=ImageColor.getrgb("blue")<br>
 print(img2)<br>
 
-OUTPUT:<br>
+**OUTPUT:<br>**
 (255, 192, 203)<br>
 (0, 0, 255)<br>
 
-6)Write a program to create image using colors spaces.<br>
+**6)Write a program to create image using colors spaces.<br>**
 from PIL import Image<br>
 img=Image.new('RGB',(200,400),(255,255,0))<br>
 img.show()<br>
 
-OUTPUT:<br>
+**OUTPUT:<br>**
 ![image](https://user-images.githubusercontent.com/97940475/173813213-de5acae2-6ef6-4202-94fa-0da206139145.png)<br>
 
-7)Develop a program to visualize the image using various color.<br>
+**7)Develop a program to visualize the image using various color.<br>**
 import cv2<br>
 import matplotlib.pyplot as plt<br>
 import numpy as np<br>
@@ -76,13 +76,13 @@ img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)<br>
 plt.imshow(img)<br>
 plt.show()<br>
 
-OUTPUT:<br>
+**OUTPUT:<br>**
 ![download](https://user-images.githubusercontent.com/97940475/173812693-fee609fd-1ec3-43c4-9a9a-5586ccae2b41.png)<br>
 ![download](https://user-images.githubusercontent.com/97940475/173812723-c5b43eb9-e2af-4f52-809c-855512fdd217.png)<br>
 ![download](https://user-images.githubusercontent.com/97940475/173812756-1df9fc22-364c-4e6d-a6da-ba9cf24af554.png)<br>
 
 
-8)Write a program to display the image attributes.<br>
+**8)Write a program to display the image attributes.<br>**
 from PIL import Image<br>
 image=Image.open('BUTTERFLY3.jpg')<br>
 print("Filename:",image.filename)<br>
@@ -93,7 +93,7 @@ print("Width:",image.width)<br>
 print("Height:",image.height)<br>
 image.close()<br>
 
-OUTPUT:<br>
+**OUTPUT:<br>**
 Filename: BUTTERFLY3.jpg<br>
 Format: JPEG<br>
 Mode: RGB<br>
@@ -101,7 +101,7 @@ size: (770, 662)<br>
 Width: 770<br>
 Height: 662<br>
 
-9)Resize the original image<br>
+**9)Resize the original image<br>**
 import cv2<br>
 img=cv2.imread('FLOWER2.jpg')<br>
 print('Original image length width',img.shape)<br>
@@ -112,13 +112,13 @@ cv2.imshow('Resized image',imgresize)<br>
 print('Resized image length width',imgresize.shape)<br>
 cv2.waitKey(0)<br>
 
-OUTPUT:<br>
+**OUTPUT:<br>**
 ![image](https://user-images.githubusercontent.com/97940475/174043738-b1cffb6b-41c9-4ce5-bcbf-d8413411edd2.png)<br>
 ![image](https://user-images.githubusercontent.com/97940475/174043822-d56fdf6b-7f5a-4584-abdb-144f70eb612e.png)<br>
 Original image length width (668, 800, 3)<br>
 Resized image length width (160, 150, 3)<br>
 
-10)Convert the original image to gray scale and then to binary....<br>
+**10)Convert the original image to gray scale and then to binary....<br>**
 import cv2<br>
 img=cv2.imread('FLOWER3.jpeg')<br>
 cv2.imshow("RGB",img)<br>
@@ -131,12 +131,12 @@ cv2.imshow("Binary",bw_img)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 
-OUTPUT:<br>
+**OUTPUT:<br>**
 ![image](https://user-images.githubusercontent.com/97940475/178947800-c12cafe7-93e0-4f71-96b2-996687b32a50.png)<br>
 ![image](https://user-images.githubusercontent.com/97940475/178947918-f91cce49-a8e6-4588-adbb-ff7adf419339.png)<br>
 ![image](https://user-images.githubusercontent.com/97940475/178948004-9e07fd78-ffe9-4b64-bd8f-6ed2188bcf09.png)<br>
 
-11)Develop a program to readimage using URL.<br>
+**11)Develop a program to readimage using URL.<br>**
 from skimage import io<br>
 import matplotlib.pyplot as plt<br>
 url='https://cdn.theatlantic.com/thumbor/viW9N1IQLbCrJ0HMtPRvXPXShkU=/0x131:2555x1568/976x549/media/img/mt/2017/06/shutterstock_319985324/original.jpg'<br>
@@ -144,10 +144,10 @@ image=io.imread(url)<br>
 plt.imshow(image)<br>
 plt.show()<br>
 
-OUTPUT:<br>
+**OUTPUT:<br>**
 ![download](https://user-images.githubusercontent.com/97940475/175264633-b00283fc-ac7c-4374-a52b-eb8ef2da7f94.png)<br>
 
-12)Write a program to mask and blur the image.<br>
+**12)Write a program to mask and blur the image.<br>**
 import cv2<br>
 import matplotlib.image as mping<br>
 import matplotlib.pyplot as plt<br>
@@ -189,7 +189,7 @@ plt.imshow(blur)<br>
 plt.show()<br>
 ![download](https://user-images.githubusercontent.com/97940475/175265449-7ee022b2-d1b9-4fbd-b77d-583c133ca31e.png)<br>
 
-13)Write a program to mask and blur the image.<br>
+**13)Write a program to mask and blur the image.<br>**
 import cv2<br>
 import matplotlib.image as mping<br>
 import matplotlib.pyplot as plt<br>
@@ -212,7 +212,7 @@ plt.imshow(blur)<br>
 plt.show()<br>
 ![download](https://user-images.githubusercontent.com/97940475/175265927-7ca7c9df-e4aa-4551-9e38-d0f02b402d67.png)<br>
 
-14)Write a program to perform arithmatic operations on images<br>
+**14)Write a program to perform arithmatic operations on images<br>**
 import cv2<br>
 import matplotlib.image as mping<br>
 import matplotlib.pyplot as plt<br>
@@ -247,13 +247,13 @@ plt.show()<br>
 #saving the output image<br>
 cv2.imwrite('output.jpg',fimg4)<br>
 
-OUTPUT:<br>
+**OUTPUT:<br>**
 ![download](https://user-images.githubusercontent.com/97940475/175266340-77562e3d-46e1-47a3-bce0-06e1115edc7b.png)<br>
 ![download](https://user-images.githubusercontent.com/97940475/175266390-7b4b0af4-0ecb-4b60-bb4e-f67a7b53f3c6.png)<br>
 ![download](https://user-images.githubusercontent.com/97940475/175266441-6fc61c5e-4eb5-4540-909d-d8f05efe33c5.png)<br>
 ![download](https://user-images.githubusercontent.com/97940475/175266508-9e240717-910e-439b-9719-beb6a97b96b9.png)<br>
 
-15)Develop the program to change the image to different color spaces.<br>
+**15)Develop the program to change the image to different color spaces.<br>**
 import cv2 <br>
 img=cv2.imread("PLANT5.jpg")<br>
 gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)<br>
@@ -269,7 +269,7 @@ cv2.imshow("YUV image",yuv)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 
-OUTPUT:<br>
+**OUTPUT:<br>**
 ![image](https://user-images.githubusercontent.com/97940475/178949251-6c19da34-415a-43bd-a24f-53c4571051be.png)<br>
 ![image](https://user-images.githubusercontent.com/97940475/178949325-b9d21f76-4656-428a-a6c0-46b85923cca7.png)<br>
 ![image](https://user-images.githubusercontent.com/97940475/178949395-bbc19379-624b-49e1-ba18-c9958e99b485.png)<br>
@@ -277,7 +277,7 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940475/178949498-45d33b7e-84c1-4625-812f-11e0e66a332a.png)<br>
 
 
-16)Program to create an image using 2D array<br>
+**16)Program to create an image using 2D array<br>**
 import cv2 as  c<br>
 import numpy as np<br>
 from PIL import Image<br>
@@ -289,10 +289,10 @@ img.save('IMAGES.jpg')<br>
 img.show()<br>
 c.waitKey(0)<br>
 
-OUTPUT:<br>
+**OUTPUT:<br>**
 ![image](https://user-images.githubusercontent.com/97940475/175268623-22cefe1a-fb53-46e1-9e3d-fce04be704b5.png)<br>
 
-17)Bitwise operation
+**17)Bitwise operation**
 import cv2<br>
 import matplotlib.pyplot as plt<br>
 image1=cv2.imread('BUTTERFLY1.png',1)<br>
@@ -315,10 +315,10 @@ plt.subplot(155)<br>
 plt.imshow(bitwiseNot_img2)<br>
 cv2.waitKey(0)<br>
 
-OUTPUT:<br>
+**OUTPUT:<br>**
 ![download](https://user-images.githubusercontent.com/97940475/176416570-60218c0f-0cea-4c47-9e84-be20fa1b0146.png)<br>
 
-18)Blurring image
+**18)Blurring image**
 #importing libraries<br>
 import cv2<br>
 import numpy as np<br>
@@ -342,14 +342,14 @@ cv2.imshow('Bilateral blurring',bilateral)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 
-OUTPUT:<br>
+**OUTPUT:<br>**
 ![image](https://user-images.githubusercontent.com/97940475/178950941-e517f39b-db6f-468f-9d26-0fb3b8791946.png)<br>
 ![image](https://user-images.githubusercontent.com/97940475/178950994-a00beb94-2392-4dae-b442-0d1b5572d252.png)<br>
 ![image](https://user-images.githubusercontent.com/97940475/178951093-50dc27a8-56ad-42bd-b8c7-c76c1c0a1e43.png)<br>
 ![image](https://user-images.githubusercontent.com/97940475/178951178-83a2a34d-dbf9-4db9-a6e0-3a47d111dc6e.png)<br>
 
 
-19)Image Enhancement
+**19)Image Enhancement**
 from PIL import Image<br>
 from PIL import ImageEnhance<br>
 image=Image.open('BUTTERFLY2.jpg')<br>
@@ -371,7 +371,7 @@ sharpness=3.0<br>
 image_sharped=enh_sha.enhance(sharpness)<br>
 image_sharped.show()<br>
 
-OUTPUT:<br>
+**OUTPUT:<br>**
 ![image](https://user-images.githubusercontent.com/97940475/178953621-413ea939-662c-4194-8989-a445e1d83017.png)<br>
 ![image](https://user-images.githubusercontent.com/97940475/178953687-0348755a-4ea3-4659-af15-8ab0293d9149.png)<br>
 ![image](https://user-images.githubusercontent.com/97940475/178953758-88faed1f-0538-44d0-bd7e-b202b861bf95.png)<br>
@@ -379,7 +379,7 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940475/178953891-3fe1cbaa-bb1c-4a0d-94ce-b53be2cadde0.png)<br>
 
 
-20)Morpholigical operation
+**20)Morpholigical operation**
 import cv2<br>
 import numpy as np<br>
 #from matplotlib import pyplt as plt<br>
@@ -405,10 +405,10 @@ plt.subplot(155)<br>
 plt.imshow(gradient)<br>
 cv2.waitKey(0)<br>
 
-OUTPUT:<br>
+**OUTPUT:<br>**
 ![download](https://user-images.githubusercontent.com/97940475/176422302-8961beeb-659a-4d07-a742-d790f30c0861.png)<br>
 
-21)Develop a program to<br>
+**21)Develop a program to<br>**
 i)Read the image,convert it into grayscale image<br>
 ii)Write(save) the grayscale image and<br>
 iii)Display the original image and grayscale image<br>
@@ -423,11 +423,11 @@ cv2.destroyAllWindows()<br>
 if isSaved:<br>
     print('The image is succesfully saved.')<br>
 
-OUTPUT:<br>
+**OUTPUT:<br>**
 ![image](https://user-images.githubusercontent.com/97940475/178954684-5d3fb0ec-f4b7-4e98-b665-e6e29fc1d527.png)<br>
 
 
-22)Slicing with background
+**22)Slicing with background**
 import cv2<br>
 import numpy as np<br>
 from matplotlib import pyplot as plt<br>
@@ -445,10 +445,10 @@ plt.title('Graylevel slicing with background')<br>
 plt.imshow(equ,'gray')<br>
 plt.show()<br>
 
-OUTPUT:<br>
+**OUTPUT:<br>**
 ![download](https://user-images.githubusercontent.com/97940475/178706167-badef28f-b034-438e-a384-df738d518413.png)<br>
 
-23)Slicing without background
+**23)Slicing without background**
 import cv2<br>
 import numpy as np<br>
 from matplotlib import pyplot as plt<br>
@@ -466,10 +466,10 @@ plt.title('Graylevel slicing without background')<br>
 plt.imshow(equ,'gray')<br>
 plt.show()<br>
 
-OUTPUT:<br>
+**OUTPUT:<br>**
 ![download](https://user-images.githubusercontent.com/97940475/178706345-ec3389d2-4597-4452-a32f-16601e9bee4e.png)<br>
 
-24)Analyze the image using Histogram<br>
+**24)Analyze the image using Histogram<br>**
 import numpy as np<br>
 import skimage.color<br>
 import skimage.io<br>
@@ -501,15 +501,15 @@ plt.xlim([0.0, 1.0])  # <- named arguments do not work here<br>
 plt.plot(bin_edges[0:-1], histogram)  # <- or here<br>
 plt.show()<br>
 
-OUTPUT:<br>
+**OUTPUT:<br>**
 ![download](https://user-images.githubusercontent.com/97940475/178964765-f7066d16-27c1-4018-9d63-44d7c76ae84c.png)<br>
 ![download](https://user-images.githubusercontent.com/97940475/178964775-8eb09887-2297-4f1b-8dc9-6a06672855a2.png)<br>
 ![download](https://user-images.githubusercontent.com/97940475/178964810-41c45a12-8c56-4bed-bb6c-73e898a4e5df.png)<br>
 
-25)Program to perform basic image data analysis using intensity transformation:<br>
+**25)Program to perform basic image data analysis using intensity transformation:<br>
 a) Image negative<br>
 b) Log transformation<br>
-c) Gamma correction<br>
+c) Gamma correction<br>**
 #%matplotlib inline<br>
 import imageio<br>
 import matplotlib.pyplot as plt<br>
@@ -564,10 +564,10 @@ plt.axis('off');<br>
 
 ![download](https://user-images.githubusercontent.com/97940475/180177303-672cb0d1-5b3f-4544-adbf-7121f2dbc72b.png)<br>
 
-26)Program to perform basic image manipulation:<br>
+**26)Program to perform basic image manipulation:<br>
 a) Sharpness<br>
 b) Flipping<br>
-c) Cropping<br>
+c) Cropping<br>**
 #Image sharpen<br>
 from PIL import Image<br>
 from PIL import ImageFilter<br>
