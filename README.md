@@ -425,7 +425,7 @@ if isSaved:<br>
 
 **OUTPUT:<br>**
 ![image](https://user-images.githubusercontent.com/97940475/178954684-5d3fb0ec-f4b7-4e98-b665-e6e29fc1d527.png)<br>
-
+The Image Is Successfully saved
 
 **21)Slicing with background<br>**
 import cv2<br>
