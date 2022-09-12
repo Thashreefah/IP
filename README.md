@@ -629,3 +629,38 @@ plt.imshow(im1)<br>
 plt.show()<br>
 
 ![download](https://user-images.githubusercontent.com/97940475/180177663-5e56e468-ee07-4b71-9bbf-5493e7d935fb.png)<br>
+
+
+
+
+
+from PIL import Image,ImageChops,ImageFilter
+from matplotlib import pyplot as plt 
+
+#Create a PIL Image object
+x=Image.open("x.png")
+o=Image.open("o.png")
+
+#Find out attributes of Image Objects
+print('size of the image:',x.size, 'color mode:',x.mode)
+print('size of the image:',o.size, 'color mode:',o.mode)
+
+#plot 2 images one besides the other
+plt.subplot(121),plt.imshow(x)
+plt.axis('off')
+plt.subplot(122),plt.imshow(o)
+plt.axis('off')
+
+#multiple images
+merged=ImageChops.multiply(x,o)
+
+#adding 2 images
+add=ImageChops.add(x,o)
+
+#convert colour mode
+greyscale=merged.convert('L')
+greyscale
+
+size of the image: (256, 256) color mode: RGB
+size of the image: (256, 256) color mode: RGB
+
