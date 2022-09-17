@@ -632,18 +632,18 @@ plt.show()<br>
 
 
 26)
-from PIL import Image,ImageChops,ImageFilter<br><br>
-from matplotlib import pyplot as plt <br><br>
+from PIL import Image,ImageChops,ImageFilter<br>
+from matplotlib import pyplot as plt <br>
 
-#Create a PIL Image object<br><br>
-x=Image.open("x.png")<br><br>
-o=Image.open("o.png")<br><br>
+#Create a PIL Image object<br>
+x=Image.open("x.png")<br>
+o=Image.open("o.png")<br>
 
-#Find out attributes of Image Objects<br><br>
-print('size of the image:',x.size, 'color mode:',x.mode)<br><br>
-print('size of the image:',o.size, 'color mode:',o.mode)<br><br>
+#Find out attributes of Image Objects<br>
+print('size of the image:',x.size, 'color mode:',x.mode)<br>
+print('size of the image:',o.size, 'color mode:',o.mode)<br>
 
-#plot 2 images one besides the other<br><br>
+#plot 2 images one besides the other<br>
 plt.subplot(121),plt.imshow(x)<br>
 plt.axis('off')<br>
 plt.subplot(122),plt.imshow(o)<br>
