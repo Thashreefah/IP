@@ -1061,110 +1061,109 @@ Dices dots number:21.<br>
 ![download](https://user-images.githubusercontent.com/97940468/190845017-25e8abb4-32b9-447f-86de-17b8a4cd28ed.png)<br>
 
 
-27)
-28)a) Canny Edge detection
-#Canny Edge detection
-import cv2
-import numpy as np
-import matplotlib.pyplot as plt
-plt.style.use('seaborn')
 
-loaded_image=cv2.imread("color.jpg")
-loaded_image=cv2.cvtColor(loaded_image,cv2.COLOR_BGR2RGB)
+28)a) Canny Edge detection<br>
+#Canny Edge detection<br>
+import cv2<br>
+import numpy as np<br>
+import matplotlib.pyplot as plt<br>
+plt.style.use('seaborn')<br>
 
-gray_image=cv2.cvtColor(loaded_image,cv2.COLOR_BGR2GRAY)
+loaded_image=cv2.imread("color.jpg")<br>
+loaded_image=cv2.cvtColor(loaded_image,cv2.COLOR_BGR2RGB)<br>
 
-edged_image=cv2.Canny(gray_image,threshold1=30,threshold2=100)
+gray_image=cv2.cvtColor(loaded_image,cv2.COLOR_BGR2GRAY)<br>
 
-plt.figure(figsize=(20,20))
-plt.subplot(1,3,1)
-plt.imshow(loaded_image,cmap="gray")
-plt.title("Original Image")
-plt.axis("off")
-plt.subplot(1,3,2)
-plt.imshow(gray_image,cmap="gray")
-plt.axis("off")
-plt.title("GrayScale Image")
-plt.subplot(1,3,3)
-plt.imshow(edged_image,cmap="gray")
-plt.axis("off")
-plt.title("Canny Edge Detected Image")
-plt.show
-![download](https://user-images.githubusercontent.com/97940475/190844669-15aa867b-f29d-44ae-b671-b6bd3b71c8c6.png)
-#b) Edge detection schemes - the gradient (Sobel - first order derivatives)
-#based edge detector and the Laplacian (2nd order derivative, so it is
-#extremely sensitive to noise) based edge detector.
-#LapLacian and Sobel Edge detecting methods
-import cv2
-import numpy as np
-from matplotlib import pyplot as plt
+edged_image=cv2.Canny(gray_image,threshold1=30,threshold2=100)<br>
 
-#Loading image
-#img0=cv2.imread('sanFrancisco.jpg',)
-img0=cv2.imread("color.jpg")
+plt.figure(figsize=(20,20))<br>
+plt.subplot(1,3,1)<br>
+plt.imshow(loaded_image,cmap="gray")<br>
+plt.title("Original Image")<br>
+plt.axis("off")<br>
+plt.subplot(1,3,2)<br>
+plt.imshow(gray_image,cmap="gray")<br>
+plt.axis("off")<br>
+plt.title("GrayScale Image")<br>
+plt.subplot(1,3,3)<br>
+plt.imshow(edged_image,cmap="gray")<br>
+plt.axis("off")<br>
+plt.title("Canny Edge Detected Image")<br>
+plt.show<br>
+![download](https://user-images.githubusercontent.com/97940475/190844669-15aa867b-f29d-44ae-b671-b6bd3b71c8c6.png)<br>
+#b) Edge detection schemes - the gradient (Sobel - first order derivatives)<br>
+#based edge detector and the Laplacian (2nd order derivative, so it is extremely sensitive to noise) based edge detector.<br>
+#LapLacian and Sobel Edge detecting methods<br>
+import cv2<br>
+import numpy as np<br>
+from matplotlib import pyplot as plt<br>
 
-#Converting to gray scale
-gray=cv2.cvtColor(img0,cv2.COLOR_BGR2GRAY)
+#Loading image<br>
+#img0=cv2.imread('sanFrancisco.jpg',)<br>
+img0=cv2.imread("color.jpg")<br>
 
-#remove noise
-img=cv2.GaussianBlur(gray,(3,3),0)
+#Converting to gray scale<br>
+gray=cv2.cvtColor(img0,cv2.COLOR_BGR2GRAY)<br>
 
-#covolute with proper kernels
-laplacian=cv2.Laplacian(img,cv2.CV_64F)
-sobelx=cv2.Sobel(img,cv2.CV_64F,1,0,ksize=5) #X
-sobely=cv2.Sobel(img,cv2.CV_64F,0,1,ksize=5) #y
+#remove noise<br>
+img=cv2.GaussianBlur(gray,(3,3),0)<br>
 
-plt.subplot(2,2,1),plt.imshow(img,cmap='gray')
-plt.title('Original'),plt.xticks([]),plt.yticks([])
-plt.subplot(2,2,2),plt.imshow(laplacian,cmap='gray')
-plt.title('Laplacian'),plt.xticks([]),plt.yticks([])
-plt.subplot(2,2,3),plt.imshow(sobelx,cmap='gray')
-plt.title('Sobel X'),plt.xticks([]),plt.yticks([])
-plt.subplot(2,2,4),plt.imshow(sobely,cmap='gray')
-plt.title('Sobel Y'),plt.xticks([]),plt.yticks([])
+#covolute with proper kernels<br>
+laplacian=cv2.Laplacian(img,cv2.CV_64F)<br>
+sobelx=cv2.Sobel(img,cv2.CV_64F,1,0,ksize=5) #X<br>
+sobely=cv2.Sobel(img,cv2.CV_64F,0,1,ksize=5) #y<br>
 
-plt.show()
-![download](https://user-images.githubusercontent.com/97940475/190844681-750e6d16-c38b-49bc-a1af-a7fa6203c5d6.png)
-#c) Edge detection using Prewitt Operator
-#Edge detection using Prewitt operator
-import cv2
-import numpy as np
-from matplotlib import pyplot as plt
-img=cv2.imread('color.jpg')
-gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-img_gaussian=cv2.GaussianBlur(gray,(3,3),0)
+plt.subplot(2,2,1),plt.imshow(img,cmap='gray')<br>
+plt.title('Original'),plt.xticks([]),plt.yticks([])<br>
+plt.subplot(2,2,2),plt.imshow(laplacian,cmap='gray')<br>
+plt.title('Laplacian'),plt.xticks([]),plt.yticks([])<br>
+plt.subplot(2,2,3),plt.imshow(sobelx,cmap='gray')<br>
+plt.title('Sobel X'),plt.xticks([]),plt.yticks([])<br>
+plt.subplot(2,2,4),plt.imshow(sobely,cmap='gray')<br>
+plt.title('Sobel Y'),plt.xticks([]),plt.yticks([])<br>
 
-#prewitt
-kernelx=np.array([[1,1,1],[0,0,0],[-1,-1,-1]])
-kernely=np.array([[-1,0,1],[-1,0,1],[-1,0,1]])
-img_prewittx=cv2.filter2D(img_gaussian,-1,kernelx)
-img_prewitty=cv2.filter2D(img_gaussian,-1,kernely)
+plt.show()<br>
+![download](https://user-images.githubusercontent.com/97940475/190844681-750e6d16-c38b-49bc-a1af-a7fa6203c5d6.png)<br>
+#c) Edge detection using Prewitt Operator<br>
+#Edge detection using Prewitt operator<br>
+import cv2<br>
+import numpy as np<br>
+from matplotlib import pyplot as plt<br>
+img=cv2.imread('color.jpg')<br>
+gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)<br>
+img_gaussian=cv2.GaussianBlur(gray,(3,3),0)<br>
 
-cv2.imshow("Original Image",img)
-cv2.imshow("Prewitt X", img_prewittx)
-cv2.imshow("Prewitt Y", img_prewitty)
-cv2.imshow("Prewitt",img_prewittx+img_prewitty)
-cv2.waitKey()
-cv2.destroyAllWindows()
+#prewitt<br>
+kernelx=np.array([[1,1,1],[0,0,0],[-1,-1,-1]])<br>
+kernely=np.array([[-1,0,1],[-1,0,1],[-1,0,1]])<br>
+img_prewittx=cv2.filter2D(img_gaussian,-1,kernelx)<br>
+img_prewitty=cv2.filter2D(img_gaussian,-1,kernely)<br>
+
+cv2.imshow("Original Image",img)<br>
+cv2.imshow("Prewitt X", img_prewittx)<br>
+cv2.imshow("Prewitt Y", img_prewitty)<br>
+cv2.imshow("Prewitt",img_prewittx+img_prewitty)<br>
+cv2.waitKey()<br>
+cv2.destroyAllWindows()<br>
 
 
-#d) Roberts Edge Detection- Roberts cross operator
-#Roberts Edge Detection- Roberts cross operator
-import cv2
-import numpy as np
-from scipy import ndimage
-from matplotlib import pyplot as plt
-roberts_cross_v=np.array([[1,0],[0,-1]])
-roberts_cross_h=np.array([[0,1],[-1,0]])
+#d) Roberts Edge Detection- Roberts cross operator<br>
+#Roberts Edge Detection- Roberts cross operator<br>
+import cv2<br>
+import numpy as np<br>
+from scipy import ndimage<br>
+from matplotlib import pyplot as plt<br>
+roberts_cross_v=np.array([[1,0],[0,-1]])<br>
+roberts_cross_h=np.array([[0,1],[-1,0]])<br>
 
-img=cv2.imread("color.jpg",0).astype('float64')
+img=cv2.imread("color.jpg",0).astype('float64')<br>
 img/=255.0
-vertical=ndimage.convolve(img,roberts_cross_v)
-horizontal=ndimage.convolve(img,roberts_cross_h)
+vertical=ndimage.convolve(img,roberts_cross_v)<br>
+horizontal=ndimage.convolve(img,roberts_cross_h)<br>
 
-edged_img=np.sqrt(np.square(horizontal)+np.square(vertical))
-edged_img*=255
-cv2.imwrite("Output.jpg",edged_img)
-cv2.imshow("OutputImage",edged_img)
-cv2.waitKey()
-cv2.destroyAllWindows()
+edged_img=np.sqrt(np.square(horizontal)+np.square(vertical))<br>
+edged_img*=255<br>
+cv2.imwrite("Output.jpg",edged_img)<br>
+cv2.imshow("OutputImage",edged_img)<br>
+cv2.waitKey()<br>
+cv2.destroyAllWindows()<br>
