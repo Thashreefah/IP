@@ -630,6 +630,26 @@ plt.show()<br>
 
 ![download](https://user-images.githubusercontent.com/97940475/180177663-5e56e468-ee07-4b71-9bbf-5493e7d935fb.png)<br>
 
+#d) Roberts Edge Detection- Roberts cross operator
+#Roberts Edge Detection- Roberts cross operator
+import cv2
+import numpy as np
+from scipy import ndimage
+from matplotlib import pyplot as plt
+roberts_cross_v=np.array([[1,0],[0,-1]])
+roberts_cross_h=np.array([[0,1],[-1,0]])
+
+img=cv2.imread("color.jpg",0).astype('float64')
+img/=255.0
+vertical=ndimage.convolve(img,roberts_cross_v)
+horizontal=ndimage.convolve(img,roberts_cross_h)
+
+edged_img=np.sqrt(np.square(horizontal)+np.square(vertical))
+edged_img*=255
+cv2.imwrite("Output.jpg",edged_img)
+cv2.imshow("OutputImage",edged_img)
+cv2.waitKey()
+cv2.destroyAllWindows()
 
 26)
 from PIL import Image,ImageChops,ImageFilter<br>
