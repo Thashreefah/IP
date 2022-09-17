@@ -631,9 +631,7 @@ plt.show()<br>
 ![download](https://user-images.githubusercontent.com/97940475/180177663-5e56e468-ee07-4b71-9bbf-5493e7d935fb.png)<br>
 
 
-
-
-
+26)
 from PIL import Image,ImageChops,ImageFilter
 from matplotlib import pyplot as plt 
 
@@ -660,7 +658,7 @@ add=ImageChops.add(x,o)
 #convert colour mode
 greyscale=merged.convert('L')
 greyscale
+size of the image: (256, 256) color mode: RGB
+size of the image: (256, 256) color mode: RGB
 
-size of the image: (256, 256) color mode: RGB
-size of the image: (256, 256) color mode: RGB
 
